@@ -15,7 +15,7 @@ import (
 )
 
 const (
-	serviceName        = "_actor.hollywood_"
+	serviceName        = "_actor.Actors_"
 	domain             = "local."
 	memberPingInterval = time.Second * 2
 )
