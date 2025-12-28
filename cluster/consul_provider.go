@@ -98,7 +98,7 @@ func (p *ConsulProvider) registerService() error {
 
 	reg := &api.AgentServiceRegistration{
 		ID:                p.memberID(),
-		Name:              "hollywood_actor",
+		Name:              "Actors_actor",
 		Tags:              p.cluster.kindsToString(),
 		Address:           host,
 		Port:              port,
@@ -117,7 +117,7 @@ func (p *ConsulProvider) registerService() error {
 func (p *ConsulProvider) watch() {
 	query := map[string]any{
 		"type":        "service",
-		"service":     "hollywood_actor",
+		"service":     "Actors_actor",
 		"passingonly": true,
 	}
 
